@@ -1,0 +1,392 @@
+luca  has set the  alarm_luca :  HH:  6  MM:  30
+anna  has set the  alarm_anna :  HH:  6  MM:  45
+luca  has set the temperature of the  thermostat  at  22  °C
+myAgent                        Trying to use intention SenseAlarmIntention to achieve goal {SenseAlarmGoal#0:{}}
+myAgent>SenseAlarmIntention#0  Intention started
+myAgent                        Trying to use intention SenseAlarmIntention to achieve goal {SenseAlarmGoal#1:{}}
+myAgent>SenseAlarmIntention#1  Intention started
+myAgent                        Trying to use intention SenseRoomIntention to achieve goal {SenseRoomGoal#2:{}}
+myAgent>SenseRoomIntention#2   Intention started
+myAgent                        Trying to use intention SenseCoffeeIntention to achieve goal {SenseCoffeeGoal#3:{}}
+myAgent>SenseCoffeeIntention#3 Intention started
+myAgent                        Trying to use intention SenseNightIntention to achieve goal {SenseNightGoal#4:{}}
+myAgent>SenseNightIntention#4  Intention started
+myAgent                        Trying to use intention SenseExternalIntention to achieve goal {SenseExternalGoal#5:{}}
+myAgent>SenseExternalIntention#5 Intention started
+myAgent                        Trying to use intention SenseCurtainsIntention to achieve goal {SenseCurtainsGoal#6:{}}
+myAgent>SenseCurtainsIntention#6 Intention started
+myAgent                        Trying to use intention SenseTemperatureIntention to achieve goal {SenseTemperatureGoal#7:{}}
+myAgent>SenseTemperatureIntention#7 Intention started
+myAgent                        Trying to use intention SenseSolarPanelIntention to achieve goal {SenseSolarPanelGoal#8:{}}
+myAgent>SenseSolarPanelIntention#8 Intention started
+myAgent                        Trying to use intention SenseStorageColumnIntention to achieve goal {SenseStorageColumnGoal#9:{}}
+myAgent>SenseStorageColumnIntention#9 Intention started
+luca moved to bedroom
+anna moved to bedroom
+world                          Belief changed: room kitchen
+world                          Belief changed: room corridor
+world                          Belief changed: room bathroom
+world                          Belief changed: room living_room
+world                          Belief changed: room bedroom
+world                          Belief changed: room entrance_hall
+world                          Belief changed: linked kitchen entrance_hall
+world                          Belief changed: linked entrance_hall kitchen
+world                          Belief changed: linked entrance_hall living_room
+world                          Belief changed: linked living_room entrance_hall
+world                          Belief changed: linked entrance_hall corridor
+world                          Belief changed: linked corridor entrance_hall
+world                          Belief changed: linked bathroom corridor
+world                          Belief changed: linked corridor bathroom
+world                          Belief changed: linked bedroom corridor
+world                          Belief changed: linked corridor bedroom
+world                          Belief changed: robot a3
+world                          Belief changed: in kitchen a3
+a3                             Belief changed: room kitchen
+a3                             Belief changed: room corridor
+a3                             Belief changed: room bathroom
+a3                             Belief changed: room living_room
+a3                             Belief changed: room bedroom
+a3                             Belief changed: room entrance_hall
+a3                             Belief changed: linked kitchen entrance_hall
+a3                             Belief changed: linked entrance_hall kitchen
+a3                             Belief changed: linked entrance_hall living_room
+a3                             Belief changed: linked living_room entrance_hall
+a3                             Belief changed: linked entrance_hall corridor
+a3                             Belief changed: linked corridor entrance_hall
+a3                             Belief changed: linked bathroom corridor
+a3                             Belief changed: linked corridor bathroom
+a3                             Belief changed: linked bedroom corridor
+a3                             Belief changed: linked corridor bedroom
+a3                             Belief changed: robot a3
+a3                             Belief changed: in kitchen a3
+0, 00:15
+0, 00:30
+0, 00:45
+0, 01:00
+0, 01:15
+0, 01:30
+0, 01:45
+0, 02:00
+0, 02:15
+0, 02:30
+0, 02:45
+0, 03:00
+0, 03:15
+0, 03:30
+0, 03:45
+0, 04:00
+0, 04:15
+0, 04:30
+0, 04:45
+0, 05:00
+0, 05:15
+0, 05:30
+0, 05:45
+0, 06:00myAgent>SenseExternalIntention#5 sense: It's 6:00, the light intensity is  25 LM  and the external temperature is  18 °C
+solar_panel  are in function
+solar_panel  are productiong 10W (TOT:  10 )
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  20  °C (- 2  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat increases the temperature by  2 ( 22  °C )
+
+0, 06:15
+0, 06:30ALARM! Wake up, it's  6 : 30 !
+myAgent>SenseAlarmIntention#0  sense: alarm_luca has rung
+coffee_machine  turned on
+myAgent>SenseAlarmIntention#0  Intention success
+myAgent                        Succesfully used intention SenseAlarmIntention to achieve goal {SenseAlarmGoal#0:{}}
+myAgent>SenseCoffeeIntention#3 sense: coffee_machine is on
+Coffee in preparation
+Coffee is ready
+myAgent>SenseCoffeeIntention#3 sense: coffee is ready
+
+0, 06:45luca moved to corridor
+world                          Belief changed: is-dirty corridor
+a3                             Belief changed: is-dirty corridor
+myAgent>SenseRoomIntention#2   sense: luca has entered in corridor  from  bedroom
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  1  person and in  bedroom  there are:  1  person!
+ALARM! Wake up, it's  6 : 45 !
+myAgent>SenseAlarmIntention#1  sense: alarm_anna has rung
+coffee_machine  turned on
+myAgent>SenseAlarmIntention#1  Intention success
+myAgent                        Succesfully used intention SenseAlarmIntention to achieve goal {SenseAlarmGoal#1:{}}
+myAgent>SenseCoffeeIntention#3 sense: coffee_machine is on
+Coffee in preparation
+Coffee is ready
+myAgent>SenseCoffeeIntention#3 sense: coffee is ready
+
+0, 07:00luca moved to entrance_hall
+anna moved to corridor
+world                          Belief changed: is-dirty entrance_hall
+a3                             Belief changed: is-dirty entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  1  person and in  corridor  there are:  1  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in corridor  from  bedroom
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  1  person and in  bedroom  there are:  0  person!
+
+0, 07:15luca moved to kitchen
+anna moved to entrance_hall
+world                          Belief changed: is-dirty kitchen
+a3                             Belief changed: is-dirty kitchen
+myAgent>SenseRoomIntention#2   sense: luca has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  1  person and in  entrance_hall  there are:  1  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  1  person and in  corridor  there are:  0  person!
+
+0, 07:30anna moved to kitchen
+myAgent>SenseRoomIntention#2   sense: anna has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 07:45luca moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  1  person and in  kitchen  there are:  1  person!
+
+0, 08:00luca moved to outside
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in outside  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  outside  there are:  1  person and in  entrance_hall  there are:  1  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  1  person and in  kitchen  there are:  0  person!
+
+0, 08:15anna moved to outside
+myAgent>SenseRoomIntention#2   sense: anna has entered in outside  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  outside  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 08:30
+0, 08:45
+0, 09:00myAgent>SenseExternalIntention#5 sense: It's 9:00, the intensity of the sun is  50
+solar_panel  are productiong 15W (TOT:  25 )
+
+0, 09:15
+0, 09:30anna 	 failed moving from outside to outside . [These two rooms are not connected by a door]
+a3                             Trying to use intention OnlinePlanning to achieve goal {PddlGoal#10:{goal:["not(is-dirty bedroom)","not(is-dirty bathroom)","not(is-dirty living_room)","not(is-dirty kitchen)","not(is-dirty corridor)"]}}
+a3>OnlinePlanning#10           Intention started
+
+0, 09:45a3>OnlinePlanning#10           Plan found:
+a3>OnlinePlanning#10           - (clean kitchen a3)
+a3>OnlinePlanning#10           - (move kitchen a3 entrance_hall)
+a3>OnlinePlanning#10           - (move entrance_hall a3 corridor)
+a3>OnlinePlanning#10           - (clean corridor a3)
+a3>OnlinePlanning#10           Starting sequential step (Clean kitchen a3) Effect: not is-dirty kitchen,in kitchen a3
+a3>Clean#11                    Intention started
+world                          Clean kitchen a3
+world                          energy consumption 5
+world                          Belief changed: not is-dirty kitchen
+a3                             Belief changed: not is-dirty kitchen
+
+0, 10:00a3>Clean#11                    Intention success
+a3>OnlinePlanning#10           Starting sequential step (Move kitchen a3 entrance_hall) Effect: in entrance_hall a3,not in kitchen a3
+a3>Move#12                     Intention started
+world                          Move kitchen a3 entrance_hall
+world                          energy consumption 6
+world                          Belief changed: in entrance_hall a3
+world                          Belief changed: not in kitchen a3
+a3                             Belief changed: in entrance_hall a3
+a3                             Belief changed: not in kitchen a3
+
+0, 10:15a3>Move#12                     Intention success
+a3>OnlinePlanning#10           Starting sequential step (Move entrance_hall a3 corridor) Effect: in corridor a3,not in entrance_hall a3
+a3>Move#13                     Intention started
+world                          Move entrance_hall a3 corridor
+world                          energy consumption 7
+world                          Belief changed: in corridor a3
+world                          Belief changed: not in entrance_hall a3
+a3                             Belief changed: in corridor a3
+a3                             Belief changed: not in entrance_hall a3
+
+0, 10:30a3>Move#13                     Intention success
+a3>OnlinePlanning#10           Starting sequential step (Clean corridor a3) Effect: not is-dirty corridor,in corridor a3
+a3>Clean#14                    Intention started
+world                          Clean corridor a3
+world                          energy consumption 8
+world                          Belief changed: not is-dirty corridor
+a3                             Belief changed: not is-dirty corridor
+
+0, 10:45
+0, 11:00
+0, 11:15
+0, 11:30
+0, 11:45
+0, 12:00myAgent>SenseExternalIntention#5 sense: It's 12:00, the light intensity is  100 LM  and the external temperature is  25 °C
+solar_panel 's energy pool is full!
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  23  °C (+ 1  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat decreases the temperature by  1 ( 22  °C )
+storage_column  is in charge.  55  W have arrived!
+storage_column  has  55  W in TOT
+
+0, 12:15
+0, 12:30
+0, 12:45
+0, 13:00
+0, 13:15
+0, 13:30
+0, 13:45
+0, 14:00luca moved to entrance_hall
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  outside
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  outside  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  outside
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  outside  there are:  0  person!
+
+0, 14:15luca moved to kitchen
+anna moved to kitchen
+myAgent>SenseRoomIntention#2   sense: luca has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  2  person and in  entrance_hall  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 14:30
+0, 14:45
+0, 15:00myAgent>SenseExternalIntention#5 sense: It's 15:00, the light intensity is  75 LM  and the external temperature is  18 °C
+solar_panel  are productiong 20W (TOT:  20 )
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  20  °C (- 2  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat increases the temperature by  2 ( 22  °C )
+
+0, 15:15luca moved to entrance_hall
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  kitchen  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  kitchen  there are:  0  person!
+
+0, 15:30luca moved to living_room
+anna moved to living_room
+myAgent>SenseRoomIntention#2   sense: luca has entered in living_room  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  living_room  there are:  2  person and in  entrance_hall  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: anna has entered in living_room  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  living_room  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 15:45
+0, 16:00
+0, 16:15
+0, 16:30
+0, 16:45
+0, 17:00
+0, 17:15
+0, 17:30
+0, 17:45
+0, 18:00myAgent>SenseExternalIntention#5 sense: It's 18:00, the light intensity is  25 LM  and the external temperature is  8 °C
+solar_panel  are productiong 10W (TOT:  30 )
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  15  °C (- 7  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat increases the temperature by  7 ( 22  °C )
+
+0, 18:15
+0, 18:30
+0, 18:45
+0, 19:00luca moved to entrance_hall
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  living_room
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  living_room  there are:  0  person!
+entrance_hall  light turned on
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  living_room
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  living_room  there are:  0  person!
+myAgent>SenseNightIntention#4  sense: It's 19:00, time to turn on the lights in the rooms where there is someone and close all the curtains
+myAgent>SenseNightIntention#4  Intention success
+myAgent                        Succesfully used intention SenseNightIntention to achieve goal {SenseNightGoal#4:{}}
+
+0, 19:15luca moved to kitchen
+anna moved to kitchen
+myAgent>SenseRoomIntention#2   sense: luca has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  2  person and in  entrance_hall  there are:  0  person!
+kitchen  light turned on
+entrance_hall  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in kitchen  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  kitchen  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 19:30
+0, 19:45
+0, 20:00myAgent>SenseExternalIntention#5 sense: It's 20:00, the light intensity is  0 LM  and the external temperature is  5 °C
+solar_panel  are in stand-by
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  14  °C (- 8  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat increases the temperature by  8 ( 22  °C )
+
+0, 20:15
+0, 20:30luca moved to entrance_hall
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  kitchen  there are:  0  person!
+entrance_hall  light turned on
+kitchen  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  kitchen
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  kitchen  there are:  0  person!
+
+0, 20:45luca moved to living_room
+anna moved to living_room
+myAgent>SenseRoomIntention#2   sense: luca has entered in living_room  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  living_room  there are:  2  person and in  entrance_hall  there are:  0  person!
+living_room  light turned on
+entrance_hall  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in living_room  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  living_room  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 21:00
+0, 21:15
+0, 21:30
+0, 21:45luca moved to entrance_hall
+anna moved to entrance_hall
+myAgent>SenseRoomIntention#2   sense: luca has entered in entrance_hall  from  living_room
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  living_room  there are:  0  person!
+entrance_hall  light turned on
+living_room  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in entrance_hall  from  living_room
+myAgent>SenseRoomIntention#2   sense: in  entrance_hall  there are:  2  person and in  living_room  there are:  0  person!
+
+0, 22:00luca moved to corridor
+anna moved to corridor
+myAgent>SenseRoomIntention#2   sense: luca has entered in corridor  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  2  person and in  entrance_hall  there are:  0  person!
+corridor  light turned on
+entrance_hall  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in corridor  from  entrance_hall
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  2  person and in  entrance_hall  there are:  0  person!
+
+0, 22:15luca moved to bathroom
+anna moved to bathroom
+myAgent>SenseRoomIntention#2   sense: luca has entered in bathroom  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  bathroom  there are:  2  person and in  corridor  there are:  0  person!
+bathroom  light turned on
+corridor  light turned off
+myAgent>SenseRoomIntention#2   sense: luca  is now using the bathroom. More privacy!
+myAgent>SenseRoomIntention#2   sense: anna has entered in bathroom  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  bathroom  there are:  2  person and in  corridor  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: anna  is now using the bathroom. More privacy!
+
+0, 22:30luca moved to corridor
+anna moved to corridor
+myAgent>SenseRoomIntention#2   sense: luca has entered in corridor  from  bathroom
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  2  person and in  bathroom  there are:  0  person!
+corridor  light turned on
+bathroom  light turned off
+myAgent>SenseRoomIntention#2   sense: No more privacy for  luca
+The curtains in  bathroom  are opening
+myAgent>SenseRoomIntention#2   sense: anna has entered in corridor  from  bathroom
+myAgent>SenseRoomIntention#2   sense: in  corridor  there are:  2  person and in  bathroom  there are:  0  person!
+myAgent>SenseRoomIntention#2   sense: No more privacy for  anna
+
+0, 22:45luca moved to bedroom
+anna moved to bedroom
+myAgent>SenseRoomIntention#2   sense: luca has entered in bedroom  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  bedroom  there are:  2  person and in  corridor  there are:  0  person!
+bedroom  light turned on
+corridor  light turned off
+myAgent>SenseRoomIntention#2   sense: anna has entered in bedroom  from  corridor
+myAgent>SenseRoomIntention#2   sense: in  bedroom  there are:  2  person and in  corridor  there are:  0  person!
+
+0, 23:00bedroom  light turned off
+luca  has turn off the lights in  bedroom
+myAgent>SenseExternalIntention#5 sense: It's 23:00, the external temperature is  0 °C
+myAgent>SenseTemperatureIntention#7 sense: The temperature is set at  22  °C but the temperature in the house is  22  °C
+myAgent>SenseTemperatureIntention#7 Due to the external temperature, inside the house there are  11  °C (- 11  °C )
+myAgent>SenseTemperatureIntention#7 The thermostat increases the temperature by  11 ( 22  °C )
+
+0, 23:15
+0, 23:30
+0, 23:45
+0, 24:00
+0, 24:15
+0, 24:30
+0, 24:45
